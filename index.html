@@ -91,7 +91,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   </style>
 
-  <!-- Structured Data JSON-LD (Agency & FAQ) -->
+ 
+ 
+ <!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
+ <!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -102,60 +105,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "name": "AnswerCraft AI",
         "url": "https://answercraftai.in",
         "logo": "https://answercraftai.in/logo.png",
-        "description": "AnswerCraft AI is a Pune-based agency specializing in Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and Local SEO.",
-        "founder": {
-          "@type": "Person",
-          "name": "Kumar Abhijeet",
-          "jobTitle": "Founder & Senior IT Consultant"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Pune",
-          "sameAs": "https://en.wikipedia.org/wiki/Pune"
-        },
-        "knowsAbout": [
-          "Answer Engine Optimization",
-          "Generative Engine Optimization",
-          "JSON-LD Schema Markup",
-          "Local Business AI Visibility"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://answercraftai.in/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Answer Engine Optimization (AEO)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AEO structures your business data using JSON-LD schema so voice assistants and AI engines cite your business as the single direct answer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does GEO differ from traditional SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Traditional SEO ranks website links on Google. GEO optimizes your business entity so Generative AI models like ChatGPT, Gemini, and Perplexity write direct recommendation paragraphs citing your business."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
-  <!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MarketingAgency",
-        "@id": "https://answercraftai.in/#agency",
-        "name": "AnswerCraft AI",
-        "url": "https://answercraftai.in",
+        "image": "https://answercraftai.in/logo.png",
         "description": "AnswerCraft AI provides Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and JSON-LD schema implementation for local businesses in Pune.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "MH",
+          "addressCountry": "IN"
+        },
         "areaServed": {
           "@type": "City",
           "name": "Pune",
