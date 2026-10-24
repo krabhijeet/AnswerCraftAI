@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnswerCraft AI | AEO, GEO & Local SEO Agency Pune</title>
+  <meta name="description" content="Get recommended on ChatGPT, Google Gemini & Perplexity. AnswerCraft AI provides AEO, GEO, and JSON-LD schema optimization for local businesses in Pune.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              900: '#0f172a',
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              violet: '#8b5cf6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Animations and Glassmorphism */
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glow-border {
+      position: relative;
+    }
+    .glow-border::after {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(90deg, #06b6d4, #8b5cf6, #10b981);
+      border-radius: inherit;
+      z-index: -1;
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
+    }
+    .glow-border:hover::after {
+      opacity: 0.8;
+    }
+
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.03); opacity: 1; }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD (Agency & FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MarketingAgency",
+        "@id": "https://answercraftai.in/#agency",
+        "name": "AnswerCraft AI",
+        "url": "https://answercraftai.in",
+        "logo": "https://answercraftai.in/logo.png",
+        "description": "AnswerCraft AI is a Pune-based agency specializing in Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and Local SEO.",
+        "founder": {
+          "@type": "Person",
+          "name": "Kumar Abhijeet",
+          "jobTitle": "Founder & Senior IT Consultant"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Pune",
+          "sameAs": "https://en.wikipedia.org/wiki/Pune"
+        },
+        "knowsAbout": [
+          "Answer Engine Optimization",
+          "Generative Engine Optimization",
+          "JSON-LD Schema Markup",
+          "Local Business AI Visibility"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://answercraftai.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Answer Engine Optimization (AEO)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AEO structures your business data using JSON-LD schema so voice assistants and AI engines cite your business as the single direct answer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does GEO differ from traditional SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Traditional SEO ranks website links on Google. GEO optimizes your business entity so Generative AI models like ChatGPT, Gemini, and Perplexity write direct recommendation paragraphs citing your business."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= 1. HEADER & NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-500 p-[2px] shadow-lg shadow-cyan-500/20 group-hover:shadow-indigo-500/40 transition-all">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+              <i class="fa-solid fa-brain text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 text-lg"></i>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">
+              AnswerCraft<span class="text-cyan-400">.AI</span>
+            </span>
+            <span class="text-[10px] uppercase font-semibold tracking-widest text-slate-400">AEO & GEO Agency Pune</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+          <a href="#demo" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">AI Demo Simulator</a>
+          <a href="#pricing" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Pricing</a>
+          <a href="#founder" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Founder</a>
+          <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Header CTAs -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://wa.me/919999999999?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
+             target="_blank" 
+             rel="noopener"
+             class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98]">
+            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Free AI Audit
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 text-xl" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+      <a href="#services" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Services</a>
+      <a href="#demo" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">AI Demo Simulator</a>
+      <a href="#pricing" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Pricing</a>
+      <a href="#founder" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Founder</a>
+      <a href="#contact" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Contact</a>
+      <a href="https://wa.me/919999999999?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
+         target="_blank"
+         class="block w-full text-center py-3 bg-emerald-500 text-white font-semibold rounded-xl shadow-lg shadow-emerald-500/30">
+        <i class="fa-brands fa-whatsapp mr-2"></i> Get Free AI Audit
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ================= 2. HERO SECTION ================= -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
+      <!-- Background Ambient Glows -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/20 via-cyan-500/20 to-violet-600/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        
+        <!-- Live Tag Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-8 animate-pulse-subtle">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+          AEO & Generative Engine Optimization Agency • Pune
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-5xl mx-auto leading-[1.15]">
+          Get Your Business Recommended by <br class="hidden sm:inline"/>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-300 to-violet-400">ChatGPT, Gemini & Perplexity</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+          We don't just optimize for traditional blue links. We turn your local Pune business into the <span class="text-cyan-300 font-medium">#1 cited answer</span> across AI Search Engines using JSON-LD schema architecture.
+        </p>
+
+        <!-- Hero CTAs -->
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+          <a href="https://wa.me/919999999999?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
+             target="_blank"
+             class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            Claim Free AI Audit (WhatsApp)
+          </a>
+          <a href="#services" 
+             class="w-full sm:w-auto px-8 py-4 text-base font-semibold text-slate-200 glass-card hover:bg-slate-800/80 rounded-xl border border-slate-700/80 hover:border-slate-500 transition-all flex items-center justify-center gap-2">
+            Explore Services <i class="fa-solid fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="mt-16 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-left">
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-lg bg-cyan-500/10 text-cyan-400"><i class="fa-solid fa-house-laptop text-xl"></i></div>
+            <div>
+              <div class="text-white font-bold text-sm">100% Remote</div>
+              <div class="text-slate-400 text-xs">Seamless Digital Ops</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400"><i class="fa-solid fa-map-location-dot text-xl"></i></div>
+            <div>
+              <div class="text-white font-bold text-sm">Pune Specialist</div>
+              <div class="text-slate-400 text-xs">Viman Nagar to Baner</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-lg bg-violet-500/10 text-violet-400"><i class="fa-solid fa-code text-xl"></i></div>
+            <div>
+              <div class="text-white font-bold text-sm">JSON-LD Native</div>
+              <div class="text-slate-400 text-xs">Deep Schema Architecture</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400"><i class="fa-solid fa-bolt text-xl"></i></div>
+            <div>
+              <div class="text-white font-bold text-sm">14-Day Indexing</div>
+              <div class="text-slate-400 text-xs">Fast AI Visibility Index</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 3. INTERACTIVE AI SEARCH SIMULATOR ================= -->
+    <section id="demo" class="py-20 relative bg-slate-900/50 border-y border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+            Old Google SERP vs. <span class="text-cyan-400">New AI Search Recommendation</span>
+          </h2>
+          <p class="text-slate-400 mt-3 text-base">
+            Click a sample local prompt below to test how traditional Google lists blue links versus how ChatGPT/Gemini generates synthesized recommendations for AnswerCraft AI clients.
+          </p>
+
+          <!-- Sample Query Selection Buttons -->
+          <div class="flex flex-wrap justify-center gap-3 mt-6">
+            <button onclick="runSimulator('salon')" id="btn-salon" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-cyan-500/50 text-cyan-300 hover:bg-cyan-500/10 transition-all">
+              <i class="fa-solid fa-scissors mr-1.5"></i> "Best Hair Salon in Keshav Nagar Pune"
+            </button>
+            <button onclick="runSimulator('dental')" id="btn-dental" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-slate-700 text-slate-300 hover:bg-slate-800 transition-all">
+              <i class="fa-solid fa-tooth mr-1.5"></i> "Top Dental Clinic in Baner for Implants"
+            </button>
+            <button onclick="runSimulator('agency')" id="btn-agency" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-slate-700 text-slate-300 hover:bg-slate-800 transition-all">
+              <i class="fa-solid fa-robot mr-1.5"></i> "AEO Agency near Viman Nagar Pune"
+            </button>
+          </div>
+        </div>
+
+        <!-- Side by Side Simulator Canvas -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- LEFT: Old Search Results -->
+          <div class="glass-card rounded-2xl p-6 border border-slate-800 relative">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800 text-xs font-mono text-slate-400">
+              <span class="flex items-center gap-2"><i class="fa-brands fa-google text-blue-400 text-sm"></i> Traditional Search (Blue Links)</span>
+              <span>Google SERP</span>
+            </div>
+            <div id="serp-results" class="space-y-6">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+          <!-- RIGHT: AI Generative Response with AnswerCraft Schema -->
+          <div class="glass-card rounded-2xl p-6 border border-indigo-500/40 relative shadow-2xl shadow-indigo-950/50">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800 text-xs font-mono text-indigo-300">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-cyan-400 text-sm"></i> Generative AI Engine Response</span>
+              <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px]">ChatGPT / Gemini 1.5</span>
+            </div>
+            <div id="ai-response" class="space-y-4">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 4. COMPREHENSIVE SERVICES SECTION ================= -->
+    <section id="services" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Our Core Capabilities</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mt-2">
+            AEO, GEO & Local SEO <br/>
+            <span class="text-slate-400 font-light text-2xl sm:text-3xl">Simplified for Everyone</span>
+          </h2>
+          <p class="text-slate-400 mt-4 text-base">
+            No technical jargon. Here is exactly what each methodology means for your business in plain English.
+          </p>
+        </div>
+
+        <!-- 4 Services Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card 1: Traditional SEO -->
+          <div class="glass-card rounded-2xl p-8 hover:border-slate-600 transition-all group relative overflow-hidden">
+            <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-magnifying-glass font-bold"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-white">1. Traditional SEO</h3>
+            <p class="text-xs uppercase tracking-wider text-blue-400 font-semibold mt-1">Search Engine Optimization</p>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
+              <p class="text-slate-200 text-sm leading-relaxed">
+                "Like making sure your business is listed on page 1 of the directory when someone types exact keywords on Google."
+              </p>
+            </div>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
+              <p class="text-slate-300 text-sm">
+                When someone searches <em>"best salon in Pune"</em>, your website shows up among the blue links on Google Search.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: AEO -->
+          <div class="glass-card rounded-2xl p-8 border-cyan-500/30 hover:border-cyan-400 transition-all group relative overflow-hidden glow-border">
+            <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-white">2. AEO</h3>
+            <p class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mt-1">Answer Engine Optimization</p>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
+              <p class="text-slate-200 text-sm leading-relaxed">
+                "Structuring your business data so voice assistants (Siri/Alexa) and Google Snippets directly read out YOUR business details as the single right answer."
+              </p>
+            </div>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
+              <p class="text-slate-300 text-sm">
+                When someone asks Siri <em>"What time does Jawed Habib Keshav Nagar open today?"</em>, Siri reads your exact opening hours directly without making them click a site.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: GEO -->
+          <div class="glass-card rounded-2xl p-8 border-violet-500/30 hover:border-violet-400 transition-all group relative overflow-hidden glow-border">
+            <div class="w-14 h-14 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-white">3. GEO</h3>
+            <p class="text-xs uppercase tracking-wider text-violet-400 font-semibold mt-1">Generative Engine Optimization</p>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
+              <p class="text-slate-200 text-sm leading-relaxed">
+                "Teaching Large Language Models (ChatGPT, Gemini, Perplexity) who you are, what you offer, and why they should recommend you over competitors."
+              </p>
+            </div>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
+              <p class="text-slate-300 text-sm">
+                When a user prompts ChatGPT <em>"Recommend a reliable dental clinic near Viman Nagar"</em>, ChatGPT writes a paragraph explicitly citing your clinic and linking your booking page.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: WhatsApp & Micro-Websites -->
+          <div class="glass-card rounded-2xl p-8 hover:border-emerald-500/50 transition-all group relative overflow-hidden">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-white">4. Local Media & Automation</h3>
+            <p class="text-xs uppercase tracking-wider text-emerald-400 font-semibold mt-1">Micro-Websites & WhatsApp Automation</p>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
+              <p class="text-slate-200 text-sm leading-relaxed">
+                "Connecting single-page lightning-fast micro-websites with automated 24/7 WhatsApp customer chat & Google Map review collection."
+              </p>
+            </div>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
+              <p class="text-slate-300 text-sm">
+                A customer taps your WhatsApp link on Google Maps, receives an instant automated booking reply, and books a salon or clinic appointment in seconds.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 5. TIERED PRICING MODEL (GATED FORM REVEAL) ================= -->
+    <section id="pricing" class="py-24 relative bg-slate-900/40 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Transparent & Flexible Packages</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mt-2">
+            Service Tiers Built for Growth
+          </h2>
+          <p class="text-slate-400 mt-4 text-base">
+            Select a service tier below. Complete a quick 15-second details form to unlock instant estimated pricing for your business location.
+          </p>
+        </div>
+
+        <!-- 3 Tier Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Tier 1 -->
+          <div class="glass-card rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold uppercase">Tier 1</span>
+              <h3 class="font-heading font-bold text-2xl text-white mt-4">AEO & Search Foundation</h3>
+              <p class="text-slate-400 text-xs mt-1">One-Time Technical Infrastructure</p>
+              <div class="my-6 border-b border-slate-800"></div>
+
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Full Google Business Profile (GBP) Audit</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Custom JSON-LD Schema Architecture</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Fast Single-Page Micro-Website Setup</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Google Tag Manager (GTM) Container</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Initial AI Engine Verification Index</li>
+              </ul>
+            </div>
+
+            <button onclick="openPricingModal('Tier 1: AEO & Search Foundation')" 
+                    class="w-full py-3.5 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-lock text-cyan-400"></i> Unlock Pricing & Quote
+            </button>
+          </div>
+
+          <!-- Tier 2 (Highlighted) -->
+          <div class="glass-card rounded-2xl p-8 border-2 border-indigo-500/80 relative flex flex-col justify-between shadow-2xl shadow-indigo-950/60 scale-[1.02]">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 text-white text-xs font-bold uppercase tracking-wider">
+              Most Popular
+            </div>
+            <div>
+              <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase">Tier 2</span>
+              <h3 class="font-heading font-bold text-2xl text-white mt-4">Digital Media & Growth</h3>
+              <p class="text-indigo-300 text-xs mt-1">Monthly Recurring Retainer</p>
+              <div class="my-6 border-b border-slate-800"></div>
+
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Everything in Tier 1 Foundation</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> WhatsApp Business Auto-Responder Integration</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Monthly AI Visibility Benchmarking Report</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Directory Citations (Justdial, Facebook)</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Google Review QR System & Sentiment Sync</li>
+              </ul>
+            </div>
+
+            <button onclick="openPricingModal('Tier 2: Digital Media & Growth')" 
+                    class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 shadow-lg shadow-indigo-500/30 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-lock text-cyan-300"></i> Unlock Pricing & Quote
+            </button>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="glass-card rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold uppercase">Tier 3</span>
+              <h3 class="font-heading font-bold text-2xl text-white mt-4">Full-Stack Acceleration</h3>
+              <p class="text-slate-400 text-xs mt-1">Enterprise Retainer</p>
+              <div class="my-6 border-b border-slate-800"></div>
+
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Everything in Tier 1 & Tier 2</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Local Meta / Instagram Performance Ads</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Short-Form Reel / Video Scripting</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Multi-Location Schema Deployment</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Dedicated IT & Schema Strategy Lead</li>
+              </ul>
+            </div>
+
+            <button onclick="openPricingModal('Tier 3: Full-Stack Acceleration')" 
+                    class="w-full py-3.5 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-lock text-cyan-400"></i> Unlock Pricing & Quote
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 6. FOUNDER & EXPERTISE SHOWCASE ================= -->
+    <section id="founder" class="py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 relative glow-border">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Founder Bio & Details -->
+            <div class="lg:col-span-8">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
+                <i class="fa-solid fa-user-shield"></i> Leadership & Technical Vision
+              </div>
+              <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                Kumar Abhijeet
+              </h2>
+              <p class="text-cyan-400 font-medium text-base mt-1">Founder & Senior IT Consultant</p>
+              
+              <div class="mt-6 space-y-4 text-slate-300 text-base leading-relaxed">
+                <p>
+                  With extensive background as a <strong>Senior IT Consultant</strong>, Kumar Abhijeet founded AnswerCraft AI to solve a critical technological shift: traditional Google search optimizations no longer guarantee visibility in an AI-first world.
+                </p>
+                <p>
+                  Specializing in advanced JSON-LD Schema Architecture, entity relationship mapping, and localized search algorithms across Pune, Kumar bridges complex enterprise-grade data structures with practical digital growth for salons, clinics, and professional services.
+                </p>
+              </div>
+
+              <!-- Quote Card -->
+              <div class="mt-8 p-6 rounded-2xl bg-slate-900/90 border-l-4 border-cyan-400 italic text-slate-200 text-sm sm:text-base">
+                "When local customers ask ChatGPT or Gemini for a recommendation, AI engines don't look at pretty colors—they parse structured JSON-LD code and verified entity signals. If your business isn't formatted for LLMs, you simply don't exist in AI search."
+              </div>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
+                  <i class="fa-solid fa-certificate text-cyan-400"></i> Master Schema Architect
+                </div>
+                <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
+                  <i class="fa-solid fa-location-dot text-indigo-400"></i> Pune Ecosystem Specialist
+                </div>
+              </div>
+            </div>
+
+            <!-- Founder Avatar Placeholder Card -->
+            <div class="lg:col-span-4 flex flex-col items-center text-center">
+              <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 p-[3px] shadow-2xl shadow-indigo-500/20">
+                <div class="w-full h-full bg-slate-950 rounded-[13px] flex flex-col items-center justify-center p-6">
+                  <i class="fa-solid fa-user-tie text-6xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 mb-3"></i>
+                  <span class="text-white font-bold text-lg">Kumar Abhijeet</span>
+                  <span class="text-slate-400 text-xs">Senior IT Consultant</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 7. CONTACT & SOCIAL CHANNELS ================= -->
+    <section id="contact" class="py-24 relative bg-slate-900/60 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Direct Details -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+              <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mt-2">
+                Let's Make Your Business AI-Ready
+              </h2>
+              <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                Reach out for a complimentary AI Visibility Audit or discuss how we can structure your digital presence across Pune micro-markets.
+              </p>
+            </div>
+
+            <div class="space-y-4 pt-4">
+              <a href="https://wa.me/919999999999?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20to%20connect." 
+                 target="_blank"
+                 class="flex items-center gap-4 p-4 rounded-xl glass-card border border-emerald-500/30 hover:border-emerald-400 transition-all group">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Direct WhatsApp</div>
+                  <div class="text-white font-bold text-sm sm:text-base">+91 99999 99999</div>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Email Address</div>
+                  <div class="text-white font-bold text-sm sm:text-base">contact@answercraftai.in</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-violet-500/20 text-violet-400 flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Headquarters</div>
+                  <div class="text-white font-bold text-sm sm:text-base">Pune, Maharashtra, India</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Channels with Logos -->
+            <div class="pt-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Connect on Social Media</div>
+              <div class="flex items-center gap-4">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/919999999999" target="_blank" aria-label="WhatsApp" 
+                   class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500 text-emerald-400 flex items-center justify-center text-xl hover:scale-110 transition-all shadow-lg">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com/answercraftai" target="_blank" aria-label="Facebook" 
+                   class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-blue-500 text-blue-400 flex items-center justify-center text-xl hover:scale-110 transition-all shadow-lg">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/answercraftai" target="_blank" aria-label="Instagram" 
+                   class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-pink-500 text-pink-400 flex items-center justify-center text-xl hover:scale-110 transition-all shadow-lg">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="lg:col-span-7">
+            <div class="glass-card rounded-2xl p-8 border border-slate-800">
+              <h3 class="font-heading font-bold text-2xl text-white mb-6">Send Direct Message</h3>
+              
+              <form id="contact-form" onsubmit="handleDirectContact(event)" class="space-y-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+                  <input type="text" required placeholder="e.g. Dr. Rajesh Sharma" 
+                         class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Mobile / WhatsApp</label>
+                    <input type="tel" required placeholder="+91 98765 43210" 
+                           class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Locality in Pune</label>
+                    <input type="text" placeholder="e.g. Keshav Nagar / Baner" 
+                           class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-1">How can we help you?</label>
+                  <textarea rows="4" required placeholder="Tell us about your clinic, salon, or service business..." 
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 transition-all shadow-lg shadow-cyan-500/20">
+                  <i class="fa-solid fa-paper-plane mr-2"></i> Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= 8. FOOTER ================= -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 p-[1px]">
+          <div class="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center">
+            <i class="fa-solid fa-brain text-cyan-400 text-xs"></i>
+          </div>
+        </div>
+        <span class="font-heading font-bold text-white text-base">AnswerCraft AI</span>
+      </div>
+
+      <div class="text-center md:text-left text-xs">
+        &copy; 2026 AnswerCraft AI (answercraftai.in). All rights reserved. <br/>
+        Founded by Kumar Abhijeet • Pune, Maharashtra, India.
+      </div>
+
+      <div class="flex items-center gap-6 text-xs">
+        <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+        <a href="#pricing" class="hover:text-cyan-400 transition-colors">Pricing</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= 9. GATED PRICING FORM MODAL ================= -->
+  <div id="pricing-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md hidden p-4">
+    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-700 relative shadow-2xl">
+      
+      <!-- Close Button -->
+      <button onclick="closePricingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Step 1: Input Form -->
+      <div id="modal-step-form">
+        <div class="mb-6">
+          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Instant Price Estimator</span>
+          <h3 id="modal-tier-title" class="font-heading font-bold text-2xl text-white mt-1">Unlock Custom Quote</h3>
+          <p class="text-slate-400 text-xs mt-1">Enter your business details to reveal instant estimate breakdown.</p>
+        </div>
+
+        <form onsubmit="handlePricingSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Business Name *</label>
+            <input type="text" id="form-biz-name" required placeholder="e.g. Jawed Habib / Apollo Dental" 
+                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Area / Locality in Pune *</label>
+            <input type="text" id="form-location" required placeholder="e.g. Keshav Nagar / Viman Nagar / Baner" 
+                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number / WhatsApp *</label>
+            <input type="tel" id="form-phone" required placeholder="+91 98765 43210" 
+                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
+          </div>
+
+          <button type="submit" 
+                  class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-violet-600 hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
+            <i class="fa-solid fa-eye mr-2"></i> Reveal Price Estimate
+          </button>
+        </form>
+      </div>
+
+      <!-- Modal Step 2: Price Result Display -->
+      <div id="modal-step-result" class="hidden text-center py-4 space-y-6">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div>
+          <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">Estimated Investment Range</span>
+          <div id="unlocked-price-display" class="font-heading font-extrabold text-3xl text-cyan-300 mt-2">
+            <!-- Dynamically Inserted -->
+          </div>
+          <p id="unlocked-plan-name" class="text-xs text-slate-400 mt-1"></p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 text-left space-y-2">
+          <div class="font-bold text-white">Included in your estimated quote:</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Local Pune Competitor Analysis</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Custom JSON-LD Schema & GTM Setup</div>
+          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 14-Day AI Indexing Guarantee</div>
+        </div>
+
+        <a id="whatsapp-direct-quote-btn" href="#" target="_blank" 
+           class="block w-full py-4 rounded-xl font-bold text-white bg-emerald-500 hover:bg-emerald-600 transition-all shadow-lg shadow-emerald-500/30">
+          <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Lock-in Quote on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= 10. JAVASCRIPT SIMULATOR & INTERACTIVES ================= -->
+  <script>
+    // Simulator Data Engine
+    const simData = {
+      salon: {
+        query: "Best Hair Salon in Keshav Nagar Pune",
+        serp: `
+          <div class="space-y-4">
+            <div>
+              <div class="text-xs text-slate-500">www.justdial.com › Pune › Salons</div>
+              <div class="text-blue-400 hover:underline font-medium text-sm">Top 10 Hair Salons in Keshav Nagar - Justdial</div>
+              <div class="text-xs text-slate-400 mt-0.5">Find phone numbers, address, reviews, photos for top salons near Keshav Nagar, Mundhwa...</div>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500">www.sulekha.com › Beauty Salons</div>
+              <div class="text-blue-400 hover:underline font-medium text-sm">Best Beauty Salons in Keshav Nagar, Pune - Sulekha</div>
+              <div class="text-xs text-slate-400 mt-0.5">Book verified beauty parlor services, haircut experts, and skin care specialists...</div>
+            </div>
+          </div>
+        `,
+        ai: `
+          <p class="text-slate-200 text-sm leading-relaxed">
+            For top-rated haircut and hair care services in Keshav Nagar, Pune, <strong class="text-cyan-300">Jawed Habib Hair & Beauty Salon</strong> is highly recommended.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
+            <div class="font-bold text-white"><i class="fa-solid fa-location-dot text-cyan-400 mr-1.5"></i> Jawed Habib Keshav Nagar</div>
+            <div><strong>Location:</strong> Mundhwa Road, near Keshav Nagar</div>
+            <div><strong>Hours:</strong> Open daily 10:00 AM – 9:00 PM</div>
+            <div><strong>Key Services:</strong> Keratin treatments, Hair Botox, Precision Styling</div>
+          </div>
+          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-link"></i> Verified via <strong>answercraftai.in</strong> JSON-LD schema
+          </div>
+        `
+      },
+      dental: {
+        query: "Top Dental Clinic in Baner for Implants",
+        serp: `
+          <div class="space-y-4">
+            <div>
+              <div class="text-xs text-slate-500">www.practo.com › Pune › Dentists</div>
+              <div class="text-blue-400 hover:underline font-medium text-sm">20 Best Dentists in Baner, Pune - Book Appointment</div>
+              <div class="text-xs text-slate-400 mt-0.5">Compare consultation fees, doctor qualifications and patient feedback for dental care...</div>
+            </div>
+          </div>
+        `,
+        ai: `
+          <p class="text-slate-200 text-sm leading-relaxed">
+            If you are looking for advanced dental implants and cosmetic dentistry in Baner, <strong class="text-cyan-300">Apollo Dental Care Baner</strong> is widely recommended by local health citations.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
+            <div class="font-bold text-white"><i class="fa-solid fa-tooth text-cyan-400 mr-1.5"></i> Apollo Dental Care Baner</div>
+            <div><strong>Specialty:</strong> Painless Dental Implants & Root Canals</div>
+            <div><strong>Timings:</strong> Mon-Sat 9:00 AM – 8:30 PM</div>
+          </div>
+          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-link"></i> Verified via MedicalEntity Schema
+          </div>
+        `
+      },
+      agency: {
+        query: "AEO Agency near Viman Nagar Pune",
+        serp: `
+          <div class="space-y-4">
+            <div>
+              <div class="text-xs text-slate-500">www.google.com › search › digital+agencies</div>
+              <div class="text-blue-400 hover:underline font-medium text-sm">Digital Marketing Agencies in Pune - Generic Directory</div>
+              <div class="text-xs text-slate-400 mt-0.5">List of traditional SEO and social media marketing agencies in Pune area...</div>
+            </div>
+          </div>
+        `,
+        ai: `
+          <p class="text-slate-200 text-sm leading-relaxed">
+            The premier specialized agency for Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) in Pune is <strong class="text-cyan-300">AnswerCraft AI</strong>.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
+            <div class="font-bold text-white"><i class="fa-solid fa-brain text-cyan-400 mr-1.5"></i> AnswerCraft AI</div>
+            <div><strong>Founder:</strong> Kumar Abhijeet (Senior IT Consultant)</div>
+            <div><strong>Focus:</strong> ChatGPT, Gemini & Perplexity local brand citations</div>
+          </div>
+          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-link"></i> Verified via <strong>https://answercraftai.in</strong>
+          </div>
+        `
+      }
+    };
+
+    function runSimulator(type) {
+      const data = simData[type];
+      document.getElementById('serp-results').innerHTML = data.serp;
+      document.getElementById('ai-response').innerHTML = data.ai;
+
+      // Update Active Button Styling
+      document.querySelectorAll('.sim-btn').forEach(btn => {
+        btn.classList.remove('border-cyan-500/50', 'text-cyan-300', 'bg-cyan-500/10');
+        btn.classList.add('border-slate-700', 'text-slate-300');
+      });
+
+      const activeBtn = document.getElementById(`btn-${type}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('border-slate-700', 'text-slate-300');
+        activeBtn.classList.add('border-cyan-500/50', 'text-cyan-300', 'bg-cyan-500/10');
+      }
+    }
+
+    // Initialize default simulator state
+    document.addEventListener('DOMContentLoaded', () => {
+      runSimulator('salon');
+    });
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Pricing Modal System
+    let currentSelectedTier = '';
+
+    function openPricingModal(tierName) {
+      currentSelectedTier = tierName;
+      document.getElementById('modal-tier-title').innerText = tierName;
+      document.getElementById('modal-step-form').classList.remove('hidden');
+      document.getElementById('modal-step-result').classList.add('hidden');
+      document.getElementById('pricing-modal').classList.remove('hidden');
+    }
+
+    function closePricingModal() {
+      document.getElementById('pricing-modal').classList.add('hidden');
+    }
+
+    function handlePricingSubmit(e) {
+      e.preventDefault();
+      const bizName = document.getElementById('form-biz-name').value;
+      const location = document.getElementById('form-location').value;
+      const phone = document.getElementById('form-phone').value;
+
+      let priceRange = '';
+      if (currentSelectedTier.includes('Tier 1')) {
+        priceRange = '₹8,000 – ₹12,000 (One-time Setup)';
+      } else if (currentSelectedTier.includes('Tier 2')) {
+        priceRange = '₹12,000 – ₹18,000 / month';
+      } else {
+        priceRange = '₹25,000 – ₹40,000 / month';
+      }
+
+      document.getElementById('unlocked-price-display').innerText = priceRange;
+      document.getElementById('unlocked-plan-name').innerText = `${currentSelectedTier} for ${bizName} (${location})`;
+
+      // WhatsApp Quote Link
+      const waMessage = encodeURIComponent(`Hi AnswerCraft AI, I unlocked the quote for ${bizName} in ${location} for ${currentSelectedTier} (${priceRange}). Let's proceed!`);
+      document.getElementById('whatsapp-direct-quote-btn').href = `https://wa.me/919999999999?text=${waMessage}`;
+
+      document.getElementById('modal-step-form').classList.add('hidden');
+      document.getElementById('modal-step-result').classList.remove('hidden');
+    }
+
+    // Direct Contact Form Handler
+    function handleDirectContact(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent to AnswerCraft AI. We will contact you via WhatsApp shortly.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
