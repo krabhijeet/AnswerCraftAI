@@ -93,18 +93,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
  
  
- <!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
+<!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "ProfessionalService"],
         "@id": "https://answercraftai.in/#agency",
         "name": "AnswerCraft AI",
         "url": "https://answercraftai.in",
         "logo": "https://answercraftai.in/logo.png",
         "image": "https://answercraftai.in/logo.png",
+        "additionalType": "https://www.wikidata.org/wiki/Q1313622",
         "description": "AnswerCraft AI provides Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and JSON-LD schema implementation for local businesses in Pune.",
         "address": {
           "@type": "PostalAddress",
