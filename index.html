@@ -1,1038 +1,205 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PMZBQ56S');</script>
-  <!-- End Google Tag Manager -->
-
-  <title>AnswerCraft AI | AEO, GEO & Local SEO Agency Pune</title>
-  <meta name="description" content="Get recommended on ChatGPT, Google Gemini & Perplexity. AnswerCraft AI provides AEO, GEO, and JSON-LD schema optimization for local businesses in Pune.">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- FontAwesome Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Google Fonts: Inter & Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            heading: ['Outfit', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              50: '#eef2ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              900: '#0f172a',
-              cyan: '#06b6d4',
-              emerald: '#10b981',
-              violet: '#8b5cf6'
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    /* Custom Animations and Glassmorphism */
-    .glass-card {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    
-    .glass-nav {
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .glow-border {
-      position: relative;
-    }
-    .glow-border::after {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      background: linear-gradient(90deg, #06b6d4, #8b5cf6, #10b981);
-      border-radius: inherit;
-      z-index: -1;
-      opacity: 0.3;
-      transition: opacity 0.3s ease;
-    }
-    .glow-border:hover::after {
-      opacity: 0.8;
-    }
-
-    @keyframes pulse-subtle {
-      0%, 100% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.03); opacity: 1; }
-    }
-    .animate-pulse-subtle {
-      animation: pulse-subtle 3s infinite ease-in-out;
-    }
-  </style>
-
-  <!-- ================= AEO & GEO JSON-LD SCHEMA ================= -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://answercraftai.in/#agency",
-        "name": "AnswerCraft AI",
-        "url": "https://answercraftai.in",
-        "logo": "https://answercraftai.in/logo.png",
-        "image": "https://answercraftai.in/logo.png",
-        "description": "AnswerCraft AI provides Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and JSON-LD schema implementation for local businesses in Pune.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Pune",
-          "addressRegion": "MH",
-          "addressCountry": "IN"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Pune",
-          "sameAs": "https://en.wikipedia.org/wiki/Pune"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "Kumar Abhijeet",
-          "jobTitle": "Senior IT Consultant"
-        },
-        "knowsAbout": [
-          "Answer Engine Optimization",
-          "Generative Engine Optimization",
-          "JSON-LD Schema Markup",
-          "Google Business Profile Optimization",
-          "Marketing Agency Services"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://answercraftai.in/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is AnswerCraft AI?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AnswerCraft AI is a Pune-based digital media and AEO agency specializing in optimizing local business entities for ChatGPT, Gemini, and Perplexity."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does AEO help local Pune businesses?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AEO structures business data and citations so AI engines recommend your clinic, salon, or service when local clients perform conversational AI searches."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AnswerCraft AI | AEO, GEO & Local SEO Agency Pune</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--ink:#0f1330;--mut:#5b6280;--line:#e5e8f3;--a:#6d4aff;--b:#00c2ff;--g:linear-gradient(120deg,#6d4aff,#00c2ff);--sh:0 10px 30px rgba(60,60,140,.1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme=dark]{--bg:#0a0c1c;--card:#131733;--ink:#eef0ff;--mut:#9aa1c7;--line:#262b52;--sh:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:hidden;transition:background .3s,color .3s}
+h1,h2,h3{font-family:Outfit,Inter,sans-serif;line-height:1.12;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--a);background:color-mix(in srgb,var(--a) 12%,transparent);padding:6px 12px;border-radius:99px}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:12px 0}
+.sub{color:var(--mut);max-width:620px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:600;border:1px solid var(--line);background:var(--card);cursor:pointer;font:600 .95rem Inter;color:var(--ink);transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.btn.p{background:var(--g);color:#fff;border:0;box-shadow:0 8px 24px rgba(109,74,255,.35)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font:800 1.2rem Outfit}.logo img{height:36px;width:auto}
+.links{display:flex;gap:24px;font-size:.92rem;font-weight:500;color:var(--mut)}
+.links a:hover{color:var(--a)}
+.nr{display:flex;gap:10px;align-items:center}
+#th{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:1.1rem}
+.hero{padding:64px 0 40px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:fl 9s ease-in-out infinite;z-index:0}
+@keyframes fl{50%{transform:translate(30px,-30px)}}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.8rem);margin:16px 0}
+.hero p{color:var(--mut);font-size:1.1rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}
+.chat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--sh);animation:fl 7s ease-in-out infinite}
+.bub{padding:12px 14px;border-radius:14px;font-size:.9rem;margin:10px 0;max-width:92%}
+.u{background:var(--bg);margin-left:auto;border:1px solid var(--line)}
+.ai{background:color-mix(in srgb,var(--a) 10%,var(--card));border:1px solid color-mix(in srgb,var(--a) 30%,transparent)}
+.ai b{color:var(--a)}
+.cur::after{content:"▍";animation:bl 1s steps(2) infinite;color:var(--a)}
+@keyframes bl{50%{opacity:0}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.st{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}
+.st b{display:block;font:800 1.7rem Outfit}
+.st span{font-size:.82rem;color:var(--mut)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}
+.tab{padding:10px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);cursor:pointer;font:500 .88rem Inter;color:var(--ink)}
+.tab.on{background:var(--g);color:#fff;border:0}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pn{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;min-height:230px}
+.pn h3{font-size:1rem;margin-bottom:12px;color:var(--mut)}
+.res{padding:9px 0;border-bottom:1px solid var(--line);font-size:.88rem;color:var(--mut)}
+.res u{color:#1a73e8;display:block;text-decoration:none;font-weight:500}
+.res.x{opacity:.5}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.sv{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.3s;position:relative;overflow:hidden}
+.sv:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--a)}
+.ic{width:46px;height:46px;border-radius:14px;background:var(--g);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.sv h3{font-size:1.15rem}.sv small{color:var(--a);font-weight:600}
+.sv p{font-size:.88rem;color:var(--mut);margin:10px 0 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.pr{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;position:relative}
+.pr.pop{border:2px solid var(--a);box-shadow:var(--sh)}
+.pr.pop::before{content:"Most Popular";position:absolute;top:-13px;left:24px;background:var(--g);color:#fff;font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:99px}
+.pr ul{list-style:none;padding:0;margin:16px 0 22px;flex:1}
+.pr li{padding:6px 0 6px 26px;position:relative;font-size:.9rem;color:var(--mut)}
+.pr li::before{content:"✓";position:absolute;left:0;color:var(--a);font-weight:700}
+.fd{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:var(--sh)}
+.av{aspect-ratio:1;max-width:260px;margin:auto;border-radius:30px;background:var(--g);display:grid;place-items:center;font:800 4rem Outfit;color:#fff;position:relative}
+.av::after{content:"";position:absolute;inset:-8px;border-radius:36px;border:2px dashed var(--a);animation:sp 20s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+blockquote{margin:16px 0 0;padding-left:16px;border-left:3px solid var(--a);color:var(--mut);font-style:italic}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:12px}
+input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--a)}
+.ci{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mut);font-size:.85rem}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:30;animation:pu 2s infinite}
+@keyframes pu{50%{transform:scale(1.08)}}
+.rv{opacity:0;transform:translateY(28px);transition:.7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.hg,.fd,.ct,.cmp{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}.links,.nr .btn{display:none}.stats{grid-template-columns:1fr 1fr}section{padding:52px 0}}
+@media(max-width:520px){.grid4{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMZBQ56S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-  <!-- ================= 1. HEADER & NAVIGATION ================= -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        
-        <!-- Brand Logo -->
-        <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 bg-slate-900 border border-cyan-500/30 p-1 flex items-center justify-center group-hover:border-cyan-400 transition-all shadow-lg shadow-cyan-500/10">
-            <img src="logo.png" alt="AnswerCraft AI Logo" class="w-full h-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<svg class=\'w-6 h-6 text-cyan-400\' viewBox=\'0 0 100 100\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'8\'><path d=\'M20,50 A30,30 0 1,1 70,50 L50,80 Z\' fill=\'none\' stroke=\'%2306b6d4\'/><path d=\'M30,65 L50,40 L65,50 L80,25\' fill=\'none\' stroke=\'%2310b981\' stroke-width=\'10\'/></svg>';">
-          </div>
-          <div class="flex flex-col">
-            <span class="font-heading font-extrabold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">
-              AnswerCraft<span class="text-cyan-400">.AI</span>
-            </span>
-            <span class="text-[10px] uppercase font-semibold tracking-widest text-slate-400">AI Engine Optimizer • Pune</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
-          <a href="#demo" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">AI Demo Simulator</a>
-          <a href="#pricing" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Pricing</a>
-          <a href="#founder" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Founder</a>
-          <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
-        </nav>
-
-        <!-- Header CTAs -->
-        <div class="hidden md:flex items-center gap-4">
-          <a href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
-             target="_blank" 
-             rel="noopener"
-             class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98]">
-            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Free AI Audit
-          </a>
-        </div>
-
-        <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 text-xl" aria-label="Toggle Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
-      <a href="#services" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Services</a>
-      <a href="#demo" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">AI Demo Simulator</a>
-      <a href="#pricing" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Pricing</a>
-      <a href="#founder" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Founder</a>
-      <a href="#contact" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Contact</a>
-      <a href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
-         target="_blank"
-         class="block w-full text-center py-3 bg-emerald-500 text-white font-semibold rounded-xl shadow-lg shadow-emerald-500/30">
-        <i class="fa-brands fa-whatsapp mr-2"></i> Get Free AI Audit
-      </a>
-    </div>
-  </header>
-
-  <main class="pt-20">
-
-    <!-- ================= 2. HERO SECTION ================= -->
-    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
-      <!-- Background Ambient Glows -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/20 via-cyan-500/20 to-violet-600/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        
-        <!-- Live Tag Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-8 animate-pulse-subtle">
-          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-          AEO & Generative Engine Optimization Agency • Pune
-        </div>
-
-        <!-- Main Headline -->
-        <h1 class="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-5xl mx-auto leading-[1.15]">
-          Get Your Business Recommended by <br class="hidden sm:inline"/>
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-300 to-violet-400">ChatGPT, Gemini & Perplexity</span>
-        </h1>
-
-        <!-- Subheadline -->
-        <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
-          We don't just optimize for traditional blue links. We turn your local Pune business into the <span class="text-cyan-300 font-medium">#1 cited answer</span> across AI Search Engines using JSON-LD schema architecture.
-        </p>
-
-        <!-- Hero CTAs -->
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
-          <a href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business." 
-             target="_blank"
-             class="w-full sm:w-auto px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-            <i class="fa-brands fa-whatsapp text-2xl"></i>
-            Claim Free AI Audit (WhatsApp)
-          </a>
-          <a href="#services" 
-             class="w-full sm:w-auto px-8 py-4 text-base font-semibold text-slate-200 glass-card hover:bg-slate-800/80 rounded-xl border border-slate-700/80 hover:border-slate-500 transition-all flex items-center justify-center gap-2">
-            Explore Services <i class="fa-solid fa-arrow-right text-sm"></i>
-          </a>
-        </div>
-
-        <!-- Trust Badges Bar -->
-        <div class="mt-16 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-left">
-          <div class="flex items-center gap-3">
-            <div class="p-2.5 rounded-lg bg-cyan-500/10 text-cyan-400"><i class="fa-solid fa-house-laptop text-xl"></i></div>
-            <div>
-              <div class="text-white font-bold text-sm">100% Remote</div>
-              <div class="text-slate-400 text-xs">Seamless Digital Ops</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400"><i class="fa-solid fa-map-location-dot text-xl"></i></div>
-            <div>
-              <div class="text-white font-bold text-sm">Pune Specialist</div>
-              <div class="text-slate-400 text-xs">Viman Nagar to Baner</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="p-2.5 rounded-lg bg-violet-500/10 text-violet-400"><i class="fa-solid fa-code text-xl"></i></div>
-            <div>
-              <div class="text-white font-bold text-sm">JSON-LD Native</div>
-              <div class="text-slate-400 text-xs">Deep Schema Architecture</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400"><i class="fa-solid fa-bolt text-xl"></i></div>
-            <div>
-              <div class="text-white font-bold text-sm">14-Day Indexing</div>
-              <div class="text-slate-400 text-xs">Fast AI Visibility Index</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= 3. INTERACTIVE AI SEARCH SIMULATOR ================= -->
-    <section id="demo" class="py-20 relative bg-slate-900/50 border-y border-slate-800/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
-            Old Google SERP vs. <span class="text-cyan-400">New AI Search Recommendation</span>
-          </h2>
-          <p class="text-slate-400 mt-3 text-base">
-            Click a sample local prompt below to test how traditional Google lists blue links versus how ChatGPT/Gemini generates synthesized recommendations for AnswerCraft AI clients.
-          </p>
-
-          <!-- Sample Query Selection Buttons -->
-          <div class="flex flex-wrap justify-center gap-3 mt-6">
-            <button onclick="runSimulator('salon')" id="btn-salon" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-cyan-500/50 text-cyan-300 hover:bg-cyan-500/10 transition-all">
-              <i class="fa-solid fa-scissors mr-1.5"></i> "Best Hair Salon in Keshav Nagar Pune"
-            </button>
-            <button onclick="runSimulator('dental')" id="btn-dental" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-slate-700 text-slate-300 hover:bg-slate-800 transition-all">
-              <i class="fa-solid fa-tooth mr-1.5"></i> "Top Dental Clinic in Baner for Implants"
-            </button>
-            <button onclick="runSimulator('agency')" id="btn-agency" class="sim-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium glass-card border border-slate-700 text-slate-300 hover:bg-slate-800 transition-all">
-              <i class="fa-solid fa-robot mr-1.5"></i> "AEO Agency near Viman Nagar Pune"
-            </button>
-          </div>
-        </div>
-
-        <!-- Side by Side Simulator Canvas -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
-          <!-- LEFT: Old Search Results -->
-          <div class="glass-card rounded-2xl p-6 border border-slate-800 relative">
-            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800 text-xs font-mono text-slate-400">
-              <span class="flex items-center gap-2"><i class="fa-brands fa-google text-blue-400 text-sm"></i> Traditional Search (Blue Links)</span>
-              <span>Google SERP</span>
-            </div>
-            <div id="serp-results" class="space-y-6">
-              <!-- Dynamically Populated -->
-            </div>
-          </div>
-
-          <!-- RIGHT: AI Generative Response with AnswerCraft Schema -->
-          <div class="glass-card rounded-2xl p-6 border border-indigo-500/40 relative shadow-2xl shadow-indigo-950/50">
-            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800 text-xs font-mono text-indigo-300">
-              <span class="flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-cyan-400 text-sm"></i> Generative AI Engine Response</span>
-              <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px]">ChatGPT / Gemini 1.5</span>
-            </div>
-            <div id="ai-response" class="space-y-4">
-              <!-- Dynamically Populated -->
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= 4. COMPREHENSIVE SERVICES SECTION ================= -->
-    <section id="services" class="py-24 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Our Core Capabilities</span>
-          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mt-2">
-            AEO, GEO & Local SEO <br/>
-            <span class="text-slate-400 font-light text-2xl sm:text-3xl">Simplified for Everyone</span>
-          </h2>
-          <p class="text-slate-400 mt-4 text-base">
-            No technical jargon. Here is exactly what each methodology means for your business in plain English.
-          </p>
-        </div>
-
-        <!-- 4 Services Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
-          <!-- Card 1: Traditional SEO -->
-          <div class="glass-card rounded-2xl p-8 hover:border-slate-600 transition-all group relative overflow-hidden">
-            <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-              <i class="fa-solid fa-magnifying-glass font-bold"></i>
-            </div>
-            <h3 class="font-heading font-bold text-2xl text-white">1. Traditional SEO</h3>
-            <p class="text-xs uppercase tracking-wider text-blue-400 font-semibold mt-1">Search Engine Optimization</p>
-
-            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
-              <p class="text-slate-200 text-sm leading-relaxed">
-                "Like making sure your business is listed on page 1 of the directory when someone types exact keywords on Google."
-              </p>
-            </div>
-
-            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
-              <p class="text-slate-300 text-sm">
-                When someone searches <em>"best salon in Pune"</em>, your website shows up among the blue links on Google Search.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2: AEO -->
-          <div class="glass-card rounded-2xl p-8 border-cyan-500/30 hover:border-cyan-400 transition-all group relative overflow-hidden glow-border">
-            <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-              <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h3 class="font-heading font-bold text-2xl text-white">2. AEO</h3>
-            <p class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mt-1">Answer Engine Optimization</p>
-
-            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
-              <p class="text-slate-200 text-sm leading-relaxed">
-                "Structuring your business data so voice assistants (Siri/Alexa) and Google Snippets directly read out YOUR business details as the single right answer."
-              </p>
-            </div>
-
-            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
-              <p class="text-slate-300 text-sm">
-                When someone asks Siri <em>"What time does Jawed Habib Keshav Nagar open today?"</em>, Siri reads your exact opening hours directly without making them click a site.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3: GEO -->
-          <div class="glass-card rounded-2xl p-8 border-violet-500/30 hover:border-violet-400 transition-all group relative overflow-hidden glow-border">
-            <div class="w-14 h-14 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-              <i class="fa-solid fa-robot"></i>
-            </div>
-            <h3 class="font-heading font-bold text-2xl text-white">3. GEO</h3>
-            <p class="text-xs uppercase tracking-wider text-violet-400 font-semibold mt-1">Generative Engine Optimization</p>
-
-            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
-              <p class="text-slate-200 text-sm leading-relaxed">
-                "Teaching Large Language Models (ChatGPT, Gemini, Perplexity) who you are, what you offer, and why they should recommend you over competitors."
-              </p>
-            </div>
-
-            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
-              <p class="text-slate-300 text-sm">
-                When a user prompts ChatGPT <em>"Recommend a reliable dental clinic near Viman Nagar"</em>, ChatGPT writes a paragraph explicitly citing your clinic and linking your booking page.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4: WhatsApp & Micro-Websites -->
-          <div class="glass-card rounded-2xl p-8 hover:border-emerald-500/50 transition-all group relative overflow-hidden">
-            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-            <h3 class="font-heading font-bold text-2xl text-white">4. Local Media & Automation</h3>
-            <p class="text-xs uppercase tracking-wider text-emerald-400 font-semibold mt-1">Micro-Websites & WhatsApp Automation</p>
-
-            <div class="mt-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-xs text-slate-400 uppercase font-bold mb-1">Simple Explanation:</div>
-              <p class="text-slate-200 text-sm leading-relaxed">
-                "Connecting single-page lightning-fast micro-websites with automated 24/7 WhatsApp customer chat & Google Map review collection."
-              </p>
-            </div>
-
-            <div class="mt-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-              <div class="text-xs text-cyan-400 uppercase font-bold mb-1"><i class="fa-solid fa-lightbulb mr-1"></i> Real-World Example:</div>
-              <p class="text-slate-300 text-sm">
-                A customer taps your WhatsApp link on Google Maps, receives an instant automated booking reply, and books a salon or clinic appointment in seconds.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= 5. TIERED PRICING MODEL (GATED FORM REVEAL) ================= -->
-    <section id="pricing" class="py-24 relative bg-slate-900/40 border-t border-slate-800/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Transparent & Flexible Packages</span>
-          <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mt-2">
-            Service Tiers Built for Growth
-          </h2>
-          <p class="text-slate-400 mt-4 text-base">
-            Select a service tier below. Complete a quick 15-second details form to unlock instant estimated pricing for your business location.
-          </p>
-        </div>
-
-        <!-- 3 Tier Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Tier 1 -->
-          <div class="glass-card rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
-            <div>
-              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold uppercase">Tier 1</span>
-              <h3 class="font-heading font-bold text-2xl text-white mt-4">AEO & Search Foundation</h3>
-              <p class="text-slate-400 text-xs mt-1">One-Time Technical Infrastructure</p>
-              <div class="my-6 border-b border-slate-800"></div>
-
-              <ul class="space-y-3 text-sm text-slate-300 mb-8">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Full Google Business Profile (GBP) Audit</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Custom JSON-LD Schema Architecture</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Fast Single-Page Micro-Website Setup</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Google Tag Manager (GTM) Container</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Initial AI Engine Verification Index</li>
-              </ul>
-            </div>
-
-            <button onclick="openPricingModal('Tier 1: AEO & Search Foundation')" 
-                    class="w-full py-3.5 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-lock text-cyan-400"></i> Unlock Pricing & Quote
-            </button>
-          </div>
-
-          <!-- Tier 2 (Highlighted) -->
-          <div class="glass-card rounded-2xl p-8 border-2 border-indigo-500/80 relative flex flex-col justify-between shadow-2xl shadow-indigo-950/60 scale-[1.02]">
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 text-white text-xs font-bold uppercase tracking-wider">
-              Most Popular
-            </div>
-            <div>
-              <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase">Tier 2</span>
-              <h3 class="font-heading font-bold text-2xl text-white mt-4">Digital Media & Growth</h3>
-              <p class="text-indigo-300 text-xs mt-1">Monthly Recurring Retainer</p>
-              <div class="my-6 border-b border-slate-800"></div>
-
-              <ul class="space-y-3 text-sm text-slate-300 mb-8">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Everything in Tier 1 Foundation</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> WhatsApp Business Auto-Responder Integration</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Monthly AI Visibility Benchmarking Report</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Directory Citations (Justdial, Facebook)</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Google Review QR System & Sentiment Sync</li>
-              </ul>
-            </div>
-
-            <button onclick="openPricingModal('Tier 2: Digital Media & Growth')" 
-                    class="w-full py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 shadow-lg shadow-indigo-500/30 transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-lock text-cyan-300"></i> Unlock Pricing & Quote
-            </button>
-          </div>
-
-          <!-- Tier 3 -->
-          <div class="glass-card rounded-2xl p-8 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
-            <div>
-              <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold uppercase">Tier 3</span>
-              <h3 class="font-heading font-bold text-2xl text-white mt-4">Full-Stack Acceleration</h3>
-              <p class="text-slate-400 text-xs mt-1">Enterprise Retainer</p>
-              <div class="my-6 border-b border-slate-800"></div>
-
-              <ul class="space-y-3 text-sm text-slate-300 mb-8">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Everything in Tier 1 & Tier 2</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Local Meta / Instagram Performance Ads</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Short-Form Reel / Video Scripting</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Multi-Location Schema Deployment</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-violet-400"></i> Dedicated IT & Schema Strategy Lead</li>
-              </ul>
-            </div>
-
-            <button onclick="openPricingModal('Tier 3: Full-Stack Acceleration')" 
-                    class="w-full py-3.5 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-lock text-cyan-400"></i> Unlock Pricing & Quote
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= 6. FOUNDER & EXPERTISE SHOWCASE ================= -->
-    <section id="founder" class="py-24 relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-800 relative glow-border">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <!-- Founder Bio & Details -->
-            <div class="lg:col-span-8">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
-                <i class="fa-solid fa-user-shield"></i> Leadership & Technical Vision
-              </div>
-              <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
-                Kumar Abhijeet
-              </h2>
-              <p class="text-cyan-400 font-medium text-base mt-1">Founder & Senior IT Consultant</p>
-              
-              <div class="mt-6 space-y-4 text-slate-300 text-base leading-relaxed">
-                <p>
-                  With extensive background as a <strong>Senior IT Consultant</strong>, Kumar Abhijeet founded AnswerCraft AI to solve a critical technological shift: traditional Google search optimizations no longer guarantee visibility in an AI-first world.
-                </p>
-                <p>
-                  Specializing in advanced JSON-LD Schema Architecture, entity relationship mapping, and localized search algorithms across Pune, Kumar bridges complex enterprise-grade data structures with practical digital growth for salons, clinics, and professional services.
-                </p>
-              </div>
-
-              <!-- Quote Card -->
-              <div class="mt-8 p-6 rounded-2xl bg-slate-900/90 border-l-4 border-cyan-400 italic text-slate-200 text-sm sm:text-base">
-                "When local customers ask ChatGPT or Gemini for a recommendation, AI engines don't look at pretty colors—they parse structured JSON-LD code and verified entity signals. If your business isn't formatted for LLMs, you simply don't exist in AI search."
-              </div>
-
-              <div class="mt-8 flex flex-wrap items-center gap-4">
-                <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
-                  <i class="fa-solid fa-certificate text-cyan-400"></i> Master Schema Architect
-                </div>
-                <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
-                  <i class="fa-solid fa-location-dot text-indigo-400"></i> Pune Ecosystem Specialist
-                </div>
-              </div>
-            </div>
-
-            <!-- Founder Avatar Placeholder Card -->
-            <div class="lg:col-span-4 flex flex-col items-center text-center">
-              <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 p-[3px] shadow-2xl shadow-indigo-500/20">
-                <div class="w-full h-full bg-slate-950 rounded-[13px] flex flex-col items-center justify-center p-6">
-                  <img src="logo.png" alt="AnswerCraft AI Logo" class="w-20 h-20 object-contain mb-3" onerror="this.style.display='none'">
-                  <span class="text-white font-bold text-lg">Kumar Abhijeet</span>
-                  <span class="text-slate-400 text-xs">Senior IT Consultant</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= 7. CONTACT & SOCIAL CHANNELS ================= -->
-    <section id="contact" class="py-24 relative bg-slate-900/60 border-t border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
-          <!-- Contact Direct Details -->
-          <div class="lg:col-span-5 space-y-6">
-            <div>
-              <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
-              <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mt-2">
-                Let's Make Your Business AI-Ready
-              </h2>
-              <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-                Reach out for a complimentary AI Visibility Audit or discuss how we can structure your digital presence across Pune micro-markets.
-              </p>
-            </div>
-
-            <div class="space-y-4 pt-4">
-              <a href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20to%20connect." 
-                 target="_blank"
-                 class="flex items-center gap-4 p-4 rounded-xl glass-card border border-emerald-500/30 hover:border-emerald-400 transition-all group">
-                <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Direct WhatsApp</div>
-                  <div class="text-white font-bold text-sm sm:text-base">+91 7387641388</div>
-                </div>
-              </a>
-
-              <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-slate-800">
-                <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Email Address</div>
-                  <div class="text-white font-bold text-sm sm:text-base">contact@answercraftai.in</div>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-4 p-4 rounded-xl glass-card border border-slate-800">
-                <div class="w-12 h-12 rounded-lg bg-violet-500/20 text-violet-400 flex items-center justify-center text-xl">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Headquarters</div>
-                  <div class="text-white font-bold text-sm sm:text-base">Pune, Maharashtra, India</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media Channels with Logos -->
-            <div class="pt-6">
-              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Connect on Social Media</div>
-              <div class="flex items-center gap-4">
-                
-                <!-- WhatsApp -->
-                <a href="https://wa.me/917387641388" target="_blank" aria-label="WhatsApp" 
-                   class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500 text-emerald-400 flex items-center justify-center text-xl hover:scale-110 transition-all shadow-lg">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/answercraft.ai" target="_blank" aria-label="Instagram" 
-                   class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 hover:border-pink-500 text-pink-400 flex items-center justify-center text-xl hover:scale-110 transition-all shadow-lg">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Quick Contact Form -->
-          <div class="lg:col-span-7">
-            <div class="glass-card rounded-2xl p-8 border border-slate-800">
-              <h3 class="font-heading font-bold text-2xl text-white mb-6">Send Direct Message</h3>
-              
-              <form id="contact-form" onsubmit="handleDirectContact(event)" class="space-y-4">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
-                  <input type="text" id="contact-name" required placeholder="e.g. Dr. Rajesh Sharma" 
-                         class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Mobile / WhatsApp</label>
-                    <input type="tel" id="contact-phone" required placeholder="+91 98765 43210" 
-                           class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-                  </div>
-                  <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Locality in Pune</label>
-                    <input type="text" id="contact-locality" placeholder="e.g. Keshav Nagar / Baner" 
-                           class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-                  </div>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold text-slate-300 mb-1">How can we help you?</label>
-                  <textarea rows="4" id="contact-message" required placeholder="Tell us about your clinic, salon, or service business..." 
-                            class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm"></textarea>
-                </div>
-
-                <button type="submit" 
-                        class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 transition-all shadow-lg shadow-cyan-500/20">
-                  <i class="fa-solid fa-paper-plane mr-2"></i> Submit Inquiry
-                </button>
-              </form>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= 8. FOOTER ================= -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-      
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 p-1 flex items-center justify-center">
-          <img src="logo.png" alt="AnswerCraft AI" class="w-full h-full object-contain" onerror="this.onerror=null; this.parentNode.innerHTML='<i class=\'fa-solid fa-arrow-trend-up text-cyan-400 text-xs\'></i>';">
-        </div>
-        <span class="font-heading font-bold text-white text-base">AnswerCraft AI</span>
-      </div>
-
-      <div class="text-center md:text-left text-xs">
-        &copy; 2026 AnswerCraft AI (answercraftai.in). All rights reserved. <br/>
-        Founded by Kumar Abhijeet • Pune, Maharashtra, India.
-      </div>
-
-      <div class="flex items-center gap-6 text-xs">
-        <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
-        <a href="#pricing" class="hover:text-cyan-400 transition-colors">Pricing</a>
-        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- ================= 9. GATED PRICING FORM MODAL ================= -->
-  <div id="pricing-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md hidden p-4">
-    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-700 relative shadow-2xl">
-      
-      <!-- Close Button -->
-      <button onclick="closePricingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <!-- Modal Step 1: Input Form -->
-      <div id="modal-step-form">
-        <div class="mb-6">
-          <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Instant Price Estimator</span>
-          <h3 id="modal-tier-title" class="font-heading font-bold text-2xl text-white mt-1">Unlock Custom Quote</h3>
-          <p class="text-slate-400 text-xs mt-1">Enter your business details to reveal instant estimate breakdown.</p>
-        </div>
-
-        <form onsubmit="handlePricingSubmit(event)" class="space-y-4">
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">Business Name *</label>
-            <input type="text" id="form-biz-name" required placeholder="e.g. Jawed Habib / Apollo Dental" 
-                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">Area / Locality in Pune *</label>
-            <input type="text" id="form-location" required placeholder="e.g. Keshav Nagar / Viman Nagar / Baner" 
-                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number / WhatsApp *</label>
-            <input type="tel" id="form-phone" required placeholder="+91 98765 43210" 
-                   class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm">
-          </div>
-
-          <button type="submit" 
-                  class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-violet-600 hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
-            <i class="fa-solid fa-eye mr-2"></i> Reveal Price Estimate
-          </button>
-        </form>
-      </div>
-
-      <!-- Modal Step 2: Price Result Display -->
-      <div id="modal-step-result" class="hidden text-center py-4 space-y-6">
-        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto">
-          <i class="fa-solid fa-circle-check"></i>
-        </div>
-
-        <div>
-          <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">Estimated Investment Range</span>
-          <div id="unlocked-price-display" class="font-heading font-extrabold text-3xl text-cyan-300 mt-2">
-            <!-- Dynamically Inserted -->
-          </div>
-          <p id="unlocked-plan-name" class="text-xs text-slate-400 mt-1"></p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 text-left space-y-2">
-          <div class="font-bold text-white">Included in your estimated quote:</div>
-          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Local Pune Competitor Analysis</div>
-          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Custom JSON-LD Schema & GTM Setup</div>
-          <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 14-Day AI Indexing Guarantee</div>
-        </div>
-
-        <a id="whatsapp-direct-quote-btn" href="#" target="_blank" 
-           class="block w-full py-4 rounded-xl font-bold text-white bg-emerald-500 hover:bg-emerald-600 transition-all shadow-lg shadow-emerald-500/30">
-          <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Lock-in Quote on WhatsApp
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ================= 10. JAVASCRIPT SIMULATOR & INTERACTIVES ================= -->
-  <script>
-    // Simulator Data Engine
-    const simData = {
-      salon: {
-        query: "Best Hair Salon in Keshav Nagar Pune",
-        serp: `
-          <div class="space-y-4">
-            <div>
-              <div class="text-xs text-slate-500">www.justdial.com › Pune › Salons</div>
-              <div class="text-blue-400 hover:underline font-medium text-sm">Top 10 Hair Salons in Keshav Nagar - Justdial</div>
-              <div class="text-xs text-slate-400 mt-0.5">Find phone numbers, address, reviews, photos for top salons near Keshav Nagar, Mundhwa...</div>
-            </div>
-            <div>
-              <div class="text-xs text-slate-500">www.sulekha.com › Beauty Salons</div>
-              <div class="text-blue-400 hover:underline font-medium text-sm">Best Beauty Salons in Keshav Nagar, Pune - Sulekha</div>
-              <div class="text-xs text-slate-400 mt-0.5">Book verified beauty parlor services, haircut experts, and skin care specialists...</div>
-            </div>
-          </div>
-        `,
-        ai: `
-          <p class="text-slate-200 text-sm leading-relaxed">
-            For top-rated haircut and hair care services in Keshav Nagar, Pune, <strong class="text-cyan-300">Jawed Habib Hair & Beauty Salon</strong> is highly recommended.
-          </p>
-          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
-            <div class="font-bold text-white"><i class="fa-solid fa-location-dot text-cyan-400 mr-1.5"></i> Jawed Habib Keshav Nagar</div>
-            <div><strong>Location:</strong> Mundhwa Road, near Keshav Nagar</div>
-            <div><strong>Hours:</strong> Open daily 10:00 AM – 9:00 PM</div>
-            <div><strong>Key Services:</strong> Keratin treatments, Hair Botox, Precision Styling</div>
-          </div>
-          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-link"></i> Verified via <strong>answercraftai.in</strong> JSON-LD schema
-          </div>
-        `
-      },
-      dental: {
-        query: "Top Dental Clinic in Baner for Implants",
-        serp: `
-          <div class="space-y-4">
-            <div>
-              <div class="text-xs text-slate-500">www.practo.com › Pune › Dentists</div>
-              <div class="text-blue-400 hover:underline font-medium text-sm">20 Best Dentists in Baner, Pune - Book Appointment</div>
-              <div class="text-xs text-slate-400 mt-0.5">Compare consultation fees, doctor qualifications and patient feedback for dental care...</div>
-            </div>
-          </div>
-        `,
-        ai: `
-          <p class="text-slate-200 text-sm leading-relaxed">
-            If you are looking for advanced dental implants and cosmetic dentistry in Baner, <strong class="text-cyan-300">Apollo Dental Care Baner</strong> is widely recommended by local health citations.
-          </p>
-          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
-            <div class="font-bold text-white"><i class="fa-solid fa-tooth text-cyan-400 mr-1.5"></i> Apollo Dental Care Baner</div>
-            <div><strong>Specialty:</strong> Painless Dental Implants & Root Canals</div>
-            <div><strong>Timings:</strong> Mon-Sat 9:00 AM – 8:30 PM</div>
-          </div>
-          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-link"></i> Verified via MedicalEntity Schema
-          </div>
-        `
-      },
-      agency: {
-        query: "AEO Agency near Viman Nagar Pune",
-        serp: `
-          <div class="space-y-4">
-            <div>
-              <div class="text-xs text-slate-500">www.google.com › search › digital+agencies</div>
-              <div class="text-blue-400 hover:underline font-medium text-sm">Digital Marketing Agencies in Pune - Generic Directory</div>
-              <div class="text-xs text-slate-400 mt-0.5">List of traditional SEO and social media marketing agencies in Pune area...</div>
-            </div>
-          </div>
-        `,
-        ai: `
-          <p class="text-slate-200 text-sm leading-relaxed">
-            The premier specialized agency for Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) in Pune is <strong class="text-cyan-300">AnswerCraft AI</strong>.
-          </p>
-          <div class="p-3 rounded-lg bg-slate-900 border border-indigo-500/30 text-xs space-y-1.5 text-slate-300">
-            <div class="font-bold text-white"><i class="fa-solid fa-brain text-cyan-400 mr-1.5"></i> AnswerCraft AI</div>
-            <div><strong>Founder:</strong> Kumar Abhijeet (Senior IT Consultant)</div>
-            <div><strong>Focus:</strong> ChatGPT, Gemini & Perplexity local brand citations</div>
-          </div>
-          <div class="text-[11px] text-cyan-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-link"></i> Verified via <strong>https://answercraftai.in</strong>
-          </div>
-        `
-      }
-    };
-
-    function runSimulator(type) {
-      const data = simData[type];
-      document.getElementById('serp-results').innerHTML = data.serp;
-      document.getElementById('ai-response').innerHTML = data.ai;
-
-      // Update Active Button Styling
-      document.querySelectorAll('.sim-btn').forEach(btn => {
-        btn.classList.remove('border-cyan-500/50', 'text-cyan-300', 'bg-cyan-500/10');
-        btn.classList.add('border-slate-700', 'text-slate-300');
-      });
-
-      const activeBtn = document.getElementById(`btn-${type}`);
-      if (activeBtn) {
-        activeBtn.classList.remove('border-slate-700', 'text-slate-300');
-        activeBtn.classList.add('border-cyan-500/50', 'text-cyan-300', 'bg-cyan-500/10');
-      }
-    }
-
-    // Initialize default simulator state
-    document.addEventListener('DOMContentLoaded', () => {
-      runSimulator('salon');
-    });
-
-    // Mobile Menu Toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-    });
-
-    // Pricing Modal System
-    let currentSelectedTier = '';
-
-    function openPricingModal(tierName) {
-      currentSelectedTier = tierName;
-      document.getElementById('modal-tier-title').innerText = tierName;
-      document.getElementById('modal-step-form').classList.remove('hidden');
-      document.getElementById('modal-step-result').classList.add('hidden');
-      document.getElementById('pricing-modal').classList.remove('hidden');
-    }
-
-    function closePricingModal() {
-      document.getElementById('pricing-modal').classList.add('hidden');
-    }
-
-    function handlePricingSubmit(e) {
-      e.preventDefault();
-      const bizName = document.getElementById('form-biz-name').value;
-      const location = document.getElementById('form-location').value;
-      const phone = document.getElementById('form-phone').value;
-
-      let priceRange = '';
-      if (currentSelectedTier.includes('Tier 1')) {
-        priceRange = '₹8,000 – ₹12,000 (One-time Setup)';
-      } else if (currentSelectedTier.includes('Tier 2')) {
-        priceRange = '₹12,000 – ₹18,000 / month';
-      } else {
-        priceRange = '₹25,000 – ₹40,000 / month';
-      }
-
-      document.getElementById('unlocked-price-display').innerText = priceRange;
-      document.getElementById('unlocked-plan-name').innerText = `${currentSelectedTier} for ${bizName} (${location})`;
-
-      // WhatsApp Quote Link
-      const waMessage = encodeURIComponent(`Hi AnswerCraft AI, I unlocked the quote for ${bizName} in ${location} for ${currentSelectedTier} (${priceRange}). Let's proceed!`);
-      document.getElementById('whatsapp-direct-quote-btn').href = `https://wa.me/917387641388?text=${waMessage}`;
-
-      document.getElementById('modal-step-form').classList.add('hidden');
-      document.getElementById('modal-step-result').classList.remove('hidden');
-    }
-
-    // Direct Contact Form Handler with Automated Email Response Formatting
-    function handleDirectContact(e) {
-      e.preventDefault();
-
-      const clientName = document.getElementById('contact-name').value;
-      const clientPhone = document.getElementById('contact-phone').value;
-      const clientLocality = document.getElementById('contact-locality').value || 'Pune';
-      const clientMsg = document.getElementById('contact-message').value;
-
-      const subject = encodeURIComponent(`Inquiry: Free AI Audit Request for ${clientName}`);
-      const body = encodeURIComponent(
-`Dear Kumar Abhijeet & AnswerCraft AI Team,
-
-I submitted an inquiry via your website (answercraftai.in) regarding an AI Visibility Audit.
-
---- MY DETAILS ---
-Name: ${clientName}
-Phone / WhatsApp: ${clientPhone}
-Locality in Pune: ${clientLocality}
-Message: ${clientMsg}
-
---- CONNECT WITH US DIRECTLY ---
-WhatsApp: https://wa.me/917387641388
-Instagram: https://www.instagram.com/answercraft.ai
-
-Looking forward to your audit report and next steps!
-
-Best regards,
-${clientName}`
-      );
-
-      // Open mail client addressed directly to contact@answercraftai.in
-      window.location.href = `mailto:contact@answercraftai.in?subject=${subject}&body=${body}`;
-
-      alert("Thank you! Your default email app will now open with the pre-formatted inquiry message. You can also connect with us on WhatsApp or Instagram!");
-      e.target.reset();
-    }
-  </script>
+<body>
+<nav><div class="w">
+<a href="#" class="logo"><img src="data:image/png;base64,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" alt="AnswerCraft AI logo" height="34" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><svg style="display:none" width="34" height="34" viewBox="0 0 40 40"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6d4aff"/><stop offset="1" stop-color="#00c2ff"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg)"/><path d="M12 29 20 10l8 19M15.5 23h9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="11" r="3" fill="#fff"/></svg><span>AnswerCraft<span class="grad">.AI</span></span></a>
+<div class="links"><a href="#demo">AI Demo</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#founder">Founder</a><a href="#contact">Contact</a></div>
+<div class="nr"><button id="th" aria-label="Toggle theme">🌙</button><a class="btn p" href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business.">Free AI Audit</a></div>
+</div></nav>
+
+<header class="hero">
+<div class="orb" style="width:340px;height:340px;background:#6d4aff;top:-80px;left:-80px"></div>
+<div class="orb" style="width:300px;height:300px;background:#00c2ff;bottom:-60px;right:-40px;animation-delay:-4s"></div>
+<div class="w">
+<div class="hg">
+<div>
+<span class="tag">AEO & GEO Agency • Pune</span>
+<h1>Get Recommended by <span class="grad">ChatGPT, Gemini & Perplexity</span></h1>
+<p>We turn your local Pune business into the <b>#1 cited answer</b> across AI search engines using JSON-LD schema architecture.</p>
+<div class="cta"><a class="btn p" href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20a%20free%20AI%20Visibility%20Audit%20for%20my%20business.">💬 Claim Free AI Audit</a><a class="btn" href="#demo">▶ See the Demo</a></div>
+</div>
+<div class="chat" aria-hidden="true">
+<div class="bub u">Recommend a reliable dental clinic near Viman Nagar</div>
+<div class="bub ai"><b>✦ AI Answer</b><br><span id="tw" class="cur"></span></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;font-size:.75rem;color:var(--mut)"><span class="tag">Cited source</span><span class="tag">JSON-LD verified</span></div>
+</div>
+</div>
+<div class="stats">
+<div class="st"><b class="grad" data-n="100" data-s="%">0</b><span>Remote Setup</span></div>
+<div class="st"><b class="grad">Pune</b><span>Viman Nagar to Baner</span></div>
+<div class="st"><b class="grad">JSON-LD</b><span>Deep Schema Native</span></div>
+<div class="st"><b class="grad" data-n="14" data-s=" Days">0</b><span>AI Indexing</span></div>
+</div>
+</div>
+</header>
+
+<section id="demo"><div class="w rv">
+<span class="tag">Live Simulator</span>
+<h2>Old Google vs. <span class="grad">New AI Search</span></h2>
+<p class="sub">Tap a prompt to see blue links versus a synthesized AI recommendation.</p>
+<div class="tabs" id="tabs"></div>
+<div class="cmp">
+<div class="pn"><h3>🔍 Traditional Google SERP</h3><div id="serp"></div></div>
+<div class="pn" style="border-color:var(--a)"><h3>✦ ChatGPT / Gemini Response</h3><div class="bub ai" id="aians" style="max-width:100%"></div></div>
+</div>
+</div></section>
+
+<section id="services" style="background:color-mix(in srgb,var(--a) 5%,transparent)"><div class="w rv">
+<span class="tag">Core Capabilities</span>
+<h2>SEO, AEO & GEO, <span class="grad">Simplified</span></h2>
+<div class="grid4">
+<div class="sv"><div class="ic">🔎</div><small>SEO</small><h3>Traditional SEO</h3><p>Rank on page 1 of Google for "best salon in Pune" and win the blue links.</p></div>
+<div class="sv"><div class="ic">🎙️</div><small>AEO</small><h3>Answer Engines</h3><p>Siri, Alexa & Google snippets read out YOUR hours and details directly.</p></div>
+<div class="sv"><div class="ic">🤖</div><small>GEO</small><h3>Generative Engines</h3><p>Teach ChatGPT, Gemini & Perplexity to cite and recommend you by name.</p></div>
+<div class="sv"><div class="ic">💬</div><small>Automation</small><h3>Micro-Sites & WhatsApp</h3><p>Fast one-page site, instant WhatsApp booking replies, review collection.</p></div>
+</div>
+</div></section>
+
+<section id="pricing"><div class="w rv">
+<span class="tag">Packages</span>
+<h2>Tiers Built for <span class="grad">Growth</span></h2>
+<p class="sub">Get an instant estimate for your area in 15 seconds on WhatsApp.</p>
+<div class="grid3">
+<div class="pr"><small style="color:var(--a);font-weight:600">TIER 1</small><h3>AEO & Search Foundation</h3><small style="color:var(--mut)">One-time setup</small><ul><li>Google Business Profile audit</li><li>Custom JSON-LD schema</li><li>Micro-website setup</li><li>GTM container</li><li>AI engine verification index</li></ul><a class="btn" href="https://wa.me/917387641388?text=Hi,%20I'd%20like%20a%20quote%20for%20Tier%201%20Foundation.">Unlock Pricing</a></div>
+<div class="pr pop"><small style="color:var(--a);font-weight:600">TIER 2</small><h3>Digital Media & Growth</h3><small style="color:var(--mut)">Monthly retainer</small><ul><li>Everything in Tier 1</li><li>WhatsApp auto-responder</li><li>Monthly AI visibility report</li><li>Justdial & Facebook citations</li><li>Review QR & sentiment sync</li></ul><a class="btn p" href="https://wa.me/917387641388?text=Hi,%20I'd%20like%20a%20quote%20for%20Tier%202%20Growth.">Unlock Pricing</a></div>
+<div class="pr"><small style="color:var(--a);font-weight:600">TIER 3</small><h3>Full-Stack Acceleration</h3><small style="color:var(--mut)">Enterprise retainer</small><ul><li>Everything in Tiers 1 & 2</li><li>Meta / Instagram ads</li><li>Reel & video scripting</li><li>Multi-location schema</li><li>Dedicated strategy lead</li></ul><a class="btn" href="https://wa.me/917387641388?text=Hi,%20I'd%20like%20a%20quote%20for%20Tier%203%20Full-Stack.">Unlock Pricing</a></div>
+</div>
+</div></section>
+
+<section id="founder"><div class="w rv"><div class="fd">
+<div class="av">KA</div>
+<div><span class="tag">Leadership</span><h2>Kumar Abhijeet</h2><p class="sub" style="margin:0">Founder & Senior IT Consultant. Specialist in JSON-LD schema architecture, entity mapping and local search across Pune, for salons, clinics and professional services.</p>
+<blockquote>AI engines don't look at pretty colors. They parse structured JSON-LD and verified entity signals.</blockquote></div>
+</div></div></section>
+
+<section id="contact"><div class="w rv"><div class="ct">
+<div><span class="tag">Get In Touch</span><h2>Let's Make Your Business <span class="grad">AI-Ready</span></h2>
+<div class="ci"><span class="ic" style="margin:0">📱</span><div><b>WhatsApp</b><br><a href="https://wa.me/917387641388">+91 7387641388</a></div></div>
+<div class="ci"><span class="ic" style="margin:0">✉️</span><div><b>Email</b><br><a href="mailto:contact@answercraftai.in">contact@answercraftai.in</a></div></div>
+<div class="ci"><span class="ic" style="margin:0">📍</span><div><b>Headquarters</b><br>Pune, Maharashtra, India</div></div>
+<div class="ci" style="border:0"><span class="ic" style="margin:0">📸</span><div><b>Instagram</b><br><a href="https://www.instagram.com/answercraft.ai">@answercraft.ai</a></div></div></div>
+<form id="f"><input id="n" placeholder="Your full name" required><input id="m" placeholder="Mobile / WhatsApp" required><input id="l" placeholder="Locality in Pune"><textarea id="q" rows="3" placeholder="How can we help you?"></textarea><button class="btn p" style="justify-content:center">Send via WhatsApp</button></form>
+</div></div></section>
+
+<footer><div class="w"><span>© 2026 AnswerCraft AI (answercraftai.in)</span><span>Founded by Kumar Abhijeet • Pune, India</span></div></footer>
+<a class="wa" href="https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'd%20like%20to%20connect." aria-label="WhatsApp">💬</a>
+
+<script>
+const R=document.documentElement,tb=document.getElementById('th');
+try{const s=localStorage.getItem('ac-theme');if(s)R.dataset.theme=s}catch(e){}
+const sync=()=>tb.textContent=R.dataset.theme==='dark'?'☀️':'🌙';sync();
+tb.onclick=()=>{R.dataset.theme=R.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('ac-theme',R.dataset.theme)}catch(e){}sync()};
+// hero typing
+const txt='For dental care near Viman Nagar, Smile Studio is highly rated and offers implants. Book via their WhatsApp link.';
+const tw=document.getElementById('tw');let i=0;
+(function t(){tw.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(t,35);else setTimeout(()=>{i=0;t()},4000)})();
+// demo
+const D=[
+{p:'Best Hair Salon in Keshav Nagar Pune',s:['Top 10 Salons in Pune – Justdial','Hair Salon Keshav Nagar – Sulekha','Best Salons Near You – Listing Site'],a:'<b>Jawed Habib Keshav Nagar</b> is a top-rated option, open daily with online booking via WhatsApp. Known for haircuts and styling.'},
+{p:'Top Dental Clinic in Baner for Implants',s:['Dentists in Baner – Directory','10 Best Clinics Baner – Blog','Dental Implants Cost Pune – Ad'],a:'<b>Your Clinic</b> in Baner is recommended for implants: verified reviews, transparent pricing and instant appointment booking.'},
+{p:'AEO Agency near Viman Nagar Pune',s:['Digital Agencies in Pune – List','What is AEO? – Generic Blog','SEO Companies Pune – Ad'],a:'<b>AnswerCraft AI</b> is a Pune specialist in AEO, GEO and JSON-LD schema, helping local businesses get cited by AI engines.'}];
+const tabs=document.getElementById('tabs'),serp=document.getElementById('serp'),an=document.getElementById('aians');let tm;
+function show(k){[...tabs.children].forEach((b,j)=>b.classList.toggle('on',j===k));
+serp.innerHTML=D[k].s.map((x,j)=>`<div class="res ${j?'x':''}"><u>${x}</u>www.example.com › listing</div>`).join('');
+clearTimeout(tm);an.innerHTML='';let h=D[k].a,c=0;(function t(){c+=2;an.innerHTML=h.slice(0,c);if(c<h.length)tm=setTimeout(t,25)})()}
+D.forEach((d,k)=>{const b=document.createElement('button');b.className='tab';b.textContent='“'+d.p+'”';b.onclick=()=>show(k);tabs.appendChild(b)});show(0);
+// contact
+document.getElementById('f').onsubmit=e=>{e.preventDefault();const v=x=>encodeURIComponent(document.getElementById(x).value);
+open(`https://wa.me/917387641388?text=Hi%20AnswerCraft%20AI,%20I'm%20${v('n')}%20(${v('m')})%20from%20${v('l')}.%20${v('q')}`,'_blank')};
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n;let c=0;const t=setInterval(()=>{c+=Math.ceil(n/30);if(c>=n){c=n;clearInterval(t)}el.textContent=c+el.dataset.s},40)});
+</script>
 </body>
 </html>
